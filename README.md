@@ -1,5 +1,5 @@
 # Markdown Previewer
-## FreeCodeCamp Front End project #3.
+## FreeCodeCamp Front End project #2.
 
 As its name suggests, this app will render GitHub flavored markdown into HTML.
 
