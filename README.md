@@ -3,7 +3,7 @@
 
 As its name suggests, this app will render GitHub flavored markdown into HTML.
 
-User stories: 
+User stories (as per [freeCodeCamp](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer) fulfilled are: 
 - [x] I can see a `textarea` element with a corresponding `id="editor"`.
 - [x] I can see an element with a corresponding `id="preview"`.
 - [x] When I enter text into the `#editor` element, the `#preview` element is updated as I type to display the content of the textarea.
@@ -20,6 +20,7 @@ User stories:
 - bolded text.
 - [x]  When my markdown previewer first loads, the default markdown in the `#editor` field should be rendered as HTML in the `#preview` element.
 
-
-Done!
 The React app is hosted on [Github pages](https://charaekeow.github.io/markdownPreviewer/).
+
+### The code?
+It's kinda messy right now as I use `react deploy` so I will "refactor" it later so that it is easier to view and maintain.
