@@ -11,32 +11,48 @@ body {
     /*padding-top: -2001px;*/
     display: flex;
     justify-content: center;
-    background: linear-gradient(to top, #d3cce3, #e9e4f0);
-
+    /* background: linear-gradient(to top, #d3cce3, #e9e4f0);*/
+    background: #eee;
 }
 
 .header {
     text-align: center;
+    margin-bottom: 40px;
+    line-height: 30px;
 }
 
 #root{
     margin-top: -80px;
 }
 
+.textarea {
+    background: #fff;
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
+.edit {
+    margin-right: 10px;
+}
+
 .input{
     margin: 0 auto;    
     width: 500px;       
-    float: left;
-    margin-right: 100px;    
+    margin-right: 20px;    
 }
 
 .input .sub-header {
     margin-top: 0;
     margin-bottom: 0;
     padding: 5px 10px;    
-    background-color: #eee;
+    background-color: #fff;
+    color: #000;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    
+    
 }
 
 textarea {
@@ -44,38 +60,66 @@ textarea {
     min-height: 700px;
     margin: 0 auto;
     padding: 20px;    
-    /*border-radius: 15px;    */
+    border-radius: 15px;    
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-color: #fff;
+    border-bottom-left-radius: 5px;    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;    
 }
 
-.output {    
-    float: right;
-    width: 600px;
+.output {        
+    width: 800px;
     height: auto;    
     margin: auto;    
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: #fff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
+.eye {
+    margin-right: 10px;
+}
+
+/* Preview */
 .output .sub-header {
     border: 1px solid;
     text-align: left;
     padding: 5px 10px;
-    background-color: #eee;
+    background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border: none; 
-    margin-top: 0;   
+    margin-top: 0;       
+    
 }
 
 #preview {
     padding: 20px;
     padding-top: 0;
+    min-height: 700px;
 }
 
 img {
     width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: #449adf;
+}
+
+footer {
+    bottom: 0;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.heart {
+    color: #f00;
+    font-size: 20px;
 }

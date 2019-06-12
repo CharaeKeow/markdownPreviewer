@@ -5,7 +5,10 @@ import ReactFCCtest from 'react-fcctest';
 import marked from 'marked';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEye} from '@fortawesome/free-solid-svg-icons'
-//import 
+import {faHeart} from '@fortawesome/free-solid-svg-icons'
+import {faEdit} from '@fortawesome/free-solid-svg-icons'
+//from package.json in case need them later:
+//
 
 marked.setOptions({
   breaks: true
@@ -34,16 +37,25 @@ class ControlledInput extends React.Component {
     render() {
       return (
         <div>
-          <h1 class="header">Markdown Previewer</h1>
-          <div className="input">
-            <h2 className='sub-header'>Editor</h2>
-            <textarea id="editor" value = {this.state.input} onChange = {this.handleChange.bind(this)} />
+          <div class="header">
+            <h1>Markdown Previewer</h1>
+            <h2>A GitHub flavored markdown live previewer</h2>
+            <p>New to markdown? Here's the <a rel="noopener noreferrer" href="https://guides.github.com/features/mastering-markdown/" target="_blank">guide</a>.</p>
           </div>
-          <div class="output">
-            <h2 className='sub-header'><FontAwesomeIcon icon={faEye} /> Preview</h2>
-            <div id="preview" dangerouslySetInnerHTML={this.createMarkUp()}></div>          
+          <div class="textarea">
+            <div className="input">
+              <h2 className='sub-header'><FontAwesomeIcon className="edit" icon={faEdit}/>Editor</h2>
+              <textarea id="editor" value = {this.state.input} onChange = {this.handleChange.bind(this)} />
+            </div>
+            <div class="output">
+              <h2 className='sub-header'><FontAwesomeIcon className='eye' icon={faEye} /> Preview</h2>
+              <div id="preview" dangerouslySetInnerHTML={this.createMarkUp()}></div>          
+            </div>
           </div>
           <ReactFCCtest />
+          <footer>
+            Coded with <FontAwesomeIcon className='heart' icon={faHeart} /> by <a href="https://twitter.com/charae_keow" target="_blank" rel="noopener noreferrer">Charae.Keow</a>
+          </footer>
         </div>
       );
     }
